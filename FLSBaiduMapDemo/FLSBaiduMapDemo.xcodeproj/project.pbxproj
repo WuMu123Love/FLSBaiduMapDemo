@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F875DF872141742F0050ADDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F875DF862141742F0050ADDD /* AppDelegate.m */; };
+		F875DF8A2141742F0050ADDD /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F875DF892141742F0050ADDD /* ViewController.mm */; };
+		F875DF8D2141742F0050ADDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F875DF8B2141742F0050ADDD /* Main.storyboard */; };
+		F875DF902141742F0050ADDD /* FLSBaiduMapDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F875DF8E2141742F0050ADDD /* FLSBaiduMapDemo.xcdatamodeld */; };
+		F875DF92214174300050ADDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F875DF91214174300050ADDD /* Assets.xcassets */; };
+		F875DF95214174300050ADDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F875DF93214174300050ADDD /* LaunchScreen.storyboard */; };
+		F875DF98214174300050ADDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F875DF97214174300050ADDD /* main.m */; };
+		F875DFA8214176860050ADDD /* BMKLocationkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFA3214176860050ADDD /* BMKLocationkit.framework */; };
+		F875DFAC214177420050ADDD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFAB214177420050ADDD /* CoreLocation.framework */; };
+		F875DFAE2141774A0050ADDD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFAD2141774A0050ADDD /* SystemConfiguration.framework */; };
+		F875DFB0214177530050ADDD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFAF214177530050ADDD /* Security.framework */; };
+		F875DFB22141775C0050ADDD /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFB12141775C0050ADDD /* libsqlite3.0.tbd */; };
+		F875DFB4214177640050ADDD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFB3214177640050ADDD /* CoreTelephony.framework */; };
+		F875DFB62141776D0050ADDD /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFB52141776D0050ADDD /* libstdc++.6.0.9.tbd */; };
+		F875DFB8214177740050ADDD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFB7214177740050ADDD /* AdSupport.framework */; };
+		F875DFC3214208A80050ADDD /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFBE214208A60050ADDD /* BaiduMapAPI_Map.framework */; };
+		F875DFC4214208A80050ADDD /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFBF214208A70050ADDD /* BaiduMapAPI_Search.framework */; };
+		F875DFC5214208A80050ADDD /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFC0214208A70050ADDD /* BaiduMapAPI_Utils.framework */; };
+		F875DFC6214208A80050ADDD /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFC1214208A80050ADDD /* BaiduMapAPI_Base.framework */; };
+		F875DFC7214208A80050ADDD /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFC2214208A80050ADDD /* BaiduMapAPI_Cloud.framework */; };
+		F875DFCB214208D10050ADDD /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFC9214208D00050ADDD /* libcrypto.a */; };
+		F875DFCC214208D10050ADDD /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFCA214208D00050ADDD /* libssl.a */; };
+		F875DFCE21420B000050ADDD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFCD21420B000050ADDD /* MobileCoreServices.framework */; };
+		F875DFD021420B100050ADDD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFCF21420B0F0050ADDD /* QuartzCore.framework */; };
+		F875DFD221420B170050ADDD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFD121420B170050ADDD /* OpenGLES.framework */; };
+		F875DFD421420B270050ADDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFD321420B270050ADDD /* CoreGraphics.framework */; };
+		F875DFD621420B460050ADDD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F875DFD521420B460050ADDD /* libc++.tbd */; };
+		F875DFD821420BDD0050ADDD /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F875DFD721420BDC0050ADDD /* mapapi.bundle */; };
+		F875DFDB21426CFC0050ADDD /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = F875DFDA21426CFC0050ADDD /* location.png */; };
+		F875DFDD21426D9D0050ADDD /* serach_Map.png in Resources */ = {isa = PBXBuildFile; fileRef = F875DFDC21426D9C0050ADDD /* serach_Map.png */; };
+		F875DFE021427E250050ADDD /* cityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F875DFDE21427E250050ADDD /* cityModel.m */; };
+		F875DFE3214281AC0050ADDD /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F875DFE2214281AC0050ADDD /* SearchViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F875DF822141742F0050ADDD /* FLSBaiduMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLSBaiduMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F875DF852141742F0050ADDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F875DF862141742F0050ADDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F875DF882141742F0050ADDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F875DF892141742F0050ADDD /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		F875DF8C2141742F0050ADDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F875DF8F2141742F0050ADDD /* FLSBaiduMapDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FLSBaiduMapDemo.xcdatamodel; sourceTree = "<group>"; };
+		F875DF91214174300050ADDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F875DF94214174300050ADDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F875DF96214174300050ADDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F875DF97214174300050ADDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F875DFA3214176860050ADDD /* BMKLocationkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMKLocationkit.framework; sourceTree = "<group>"; };
+		F875DFAB214177420050ADDD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F875DFAD2141774A0050ADDD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F875DFAF214177530050ADDD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F875DFB12141775C0050ADDD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F875DFB3214177640050ADDD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F875DFB52141776D0050ADDD /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		F875DFB7214177740050ADDD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F875DFBE214208A60050ADDD /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		F875DFBF214208A70050ADDD /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
+		F875DFC0214208A70050ADDD /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		F875DFC1214208A80050ADDD /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		F875DFC2214208A80050ADDD /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
+		F875DFC9214208D00050ADDD /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		F875DFCA214208D00050ADDD /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		F875DFCD21420B000050ADDD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F875DFCF21420B0F0050ADDD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F875DFD121420B170050ADDD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F875DFD321420B270050ADDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F875DFD521420B460050ADDD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		F875DFD721420BDC0050ADDD /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapAPI_Map.framework/mapapi.bundle; sourceTree = "<group>"; };
+		F875DFD9214220E70050ADDD /* BaiduMapHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduMapHeader.h; sourceTree = "<group>"; };
+		F875DFDA21426CFC0050ADDD /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		F875DFDC21426D9C0050ADDD /* serach_Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serach_Map.png; sourceTree = "<group>"; };
+		F875DFDE21427E250050ADDD /* cityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cityModel.m; sourceTree = "<group>"; };
+		F875DFDF21427E250050ADDD /* cityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cityModel.h; sourceTree = "<group>"; };
+		F875DFE1214281AC0050ADDD /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		F875DFE2214281AC0050ADDD /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F875DF7F2141742F0050ADDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F875DFD621420B460050ADDD /* libc++.tbd in Frameworks */,
+				F875DFB4214177640050ADDD /* CoreTelephony.framework in Frameworks */,
+				F875DFB22141775C0050ADDD /* libsqlite3.0.tbd in Frameworks */,
+				F875DFB0214177530050ADDD /* Security.framework in Frameworks */,
+				F875DFD421420B270050ADDD /* CoreGraphics.framework in Frameworks */,
+				F875DFAE2141774A0050ADDD /* SystemConfiguration.framework in Frameworks */,
+				F875DFD221420B170050ADDD /* OpenGLES.framework in Frameworks */,
+				F875DFD021420B100050ADDD /* QuartzCore.framework in Frameworks */,
+				F875DFAC214177420050ADDD /* CoreLocation.framework in Frameworks */,
+				F875DFCE21420B000050ADDD /* MobileCoreServices.framework in Frameworks */,
+				F875DFB8214177740050ADDD /* AdSupport.framework in Frameworks */,
+				F875DFB62141776D0050ADDD /* libstdc++.6.0.9.tbd in Frameworks */,
+				F875DFC5214208A80050ADDD /* BaiduMapAPI_Utils.framework in Frameworks */,
+				F875DFCC214208D10050ADDD /* libssl.a in Frameworks */,
+				F875DFCB214208D10050ADDD /* libcrypto.a in Frameworks */,
+				F875DFC7214208A80050ADDD /* BaiduMapAPI_Cloud.framework in Frameworks */,
+				F875DFC3214208A80050ADDD /* BaiduMapAPI_Map.framework in Frameworks */,
+				F875DFC4214208A80050ADDD /* BaiduMapAPI_Search.framework in Frameworks */,
+				F875DFC6214208A80050ADDD /* BaiduMapAPI_Base.framework in Frameworks */,
+				F875DFA8214176860050ADDD /* BMKLocationkit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F875DF792141742F0050ADDD = {
+			isa = PBXGroup;
+			children = (
+				F875DF842141742F0050ADDD /* FLSBaiduMapDemo */,
+				F875DF832141742F0050ADDD /* Products */,
+				F875DFAA214176EE0050ADDD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F875DF832141742F0050ADDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F875DF822141742F0050ADDD /* FLSBaiduMapDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F875DF842141742F0050ADDD /* FLSBaiduMapDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F875DF9E214176860050ADDD /* BaiduMapAPI */,
+				F875DF852141742F0050ADDD /* AppDelegate.h */,
+				F875DF862141742F0050ADDD /* AppDelegate.m */,
+				F875DF882141742F0050ADDD /* ViewController.h */,
+				F875DF892141742F0050ADDD /* ViewController.mm */,
+				F875DFE1214281AC0050ADDD /* SearchViewController.h */,
+				F875DFE2214281AC0050ADDD /* SearchViewController.m */,
+				F875DFDF21427E250050ADDD /* cityModel.h */,
+				F875DFDE21427E250050ADDD /* cityModel.m */,
+				F875DF8B2141742F0050ADDD /* Main.storyboard */,
+				F875DF91214174300050ADDD /* Assets.xcassets */,
+				F875DF93214174300050ADDD /* LaunchScreen.storyboard */,
+				F875DF96214174300050ADDD /* Info.plist */,
+				F875DF97214174300050ADDD /* main.m */,
+				F875DF8E2141742F0050ADDD /* FLSBaiduMapDemo.xcdatamodeld */,
+			);
+			path = FLSBaiduMapDemo;
+			sourceTree = "<group>";
+		};
+		F875DF9E214176860050ADDD /* BaiduMapAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F875DFDC21426D9C0050ADDD /* serach_Map.png */,
+				F875DFDA21426CFC0050ADDD /* location.png */,
+				F875DFD9214220E70050ADDD /* BaiduMapHeader.h */,
+				F875DFD721420BDC0050ADDD /* mapapi.bundle */,
+				F875DFC8214208D00050ADDD /* thirdlibs */,
+				F875DFC1214208A80050ADDD /* BaiduMapAPI_Base.framework */,
+				F875DFC2214208A80050ADDD /* BaiduMapAPI_Cloud.framework */,
+				F875DFBE214208A60050ADDD /* BaiduMapAPI_Map.framework */,
+				F875DFBF214208A70050ADDD /* BaiduMapAPI_Search.framework */,
+				F875DFC0214208A70050ADDD /* BaiduMapAPI_Utils.framework */,
+				F875DFA3214176860050ADDD /* BMKLocationkit.framework */,
+			);
+			path = BaiduMapAPI;
+			sourceTree = "<group>";
+		};
+		F875DFAA214176EE0050ADDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F875DFD521420B460050ADDD /* libc++.tbd */,
+				F875DFD321420B270050ADDD /* CoreGraphics.framework */,
+				F875DFD121420B170050ADDD /* OpenGLES.framework */,
+				F875DFCF21420B0F0050ADDD /* QuartzCore.framework */,
+				F875DFCD21420B000050ADDD /* MobileCoreServices.framework */,
+				F875DFB7214177740050ADDD /* AdSupport.framework */,
+				F875DFB52141776D0050ADDD /* libstdc++.6.0.9.tbd */,
+				F875DFB3214177640050ADDD /* CoreTelephony.framework */,
+				F875DFB12141775C0050ADDD /* libsqlite3.0.tbd */,
+				F875DFAF214177530050ADDD /* Security.framework */,
+				F875DFAD2141774A0050ADDD /* SystemConfiguration.framework */,
+				F875DFAB214177420050ADDD /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F875DFC8214208D00050ADDD /* thirdlibs */ = {
+			isa = PBXGroup;
+			children = (
+				F875DFC9214208D00050ADDD /* libcrypto.a */,
+				F875DFCA214208D00050ADDD /* libssl.a */,
+			);
+			path = thirdlibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F875DF812141742F0050ADDD /* FLSBaiduMapDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F875DF9B214174300050ADDD /* Build configuration list for PBXNativeTarget "FLSBaiduMapDemo" */;
+			buildPhases = (
+				F875DF7E2141742F0050ADDD /* Sources */,
+				F875DF7F2141742F0050ADDD /* Frameworks */,
+				F875DF802141742F0050ADDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLSBaiduMapDemo;
+			productName = FLSBaiduMapDemo;
+			productReference = F875DF822141742F0050ADDD /* FLSBaiduMapDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F875DF7A2141742F0050ADDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "天立泰";
+				TargetAttributes = {
+					F875DF812141742F0050ADDD = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F875DF7D2141742F0050ADDD /* Build configuration list for PBXProject "FLSBaiduMapDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F875DF792141742F0050ADDD;
+			productRefGroup = F875DF832141742F0050ADDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F875DF812141742F0050ADDD /* FLSBaiduMapDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F875DF802141742F0050ADDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F875DF95214174300050ADDD /* LaunchScreen.storyboard in Resources */,
+				F875DFD821420BDD0050ADDD /* mapapi.bundle in Resources */,
+				F875DFDD21426D9D0050ADDD /* serach_Map.png in Resources */,
+				F875DFDB21426CFC0050ADDD /* location.png in Resources */,
+				F875DF92214174300050ADDD /* Assets.xcassets in Resources */,
+				F875DF8D2141742F0050ADDD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F875DF7E2141742F0050ADDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F875DF8A2141742F0050ADDD /* ViewController.mm in Sources */,
+				F875DF902141742F0050ADDD /* FLSBaiduMapDemo.xcdatamodeld in Sources */,
+				F875DF98214174300050ADDD /* main.m in Sources */,
+				F875DF872141742F0050ADDD /* AppDelegate.m in Sources */,
+				F875DFE3214281AC0050ADDD /* SearchViewController.m in Sources */,
+				F875DFE021427E250050ADDD /* cityModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F875DF8B2141742F0050ADDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F875DF8C2141742F0050ADDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F875DF93214174300050ADDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F875DF94214174300050ADDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F875DF99214174300050ADDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F875DF9A214174300050ADDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F875DF9C214174300050ADDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DGTNESU3E5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FLSBaiduMapDemo/BaiduMapAPI",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = FLSBaiduMapDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FLSBaiduMapDemo/BaiduMapAPI/thirdlibs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haoniu.qingcong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		F875DF9D214174300050ADDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DGTNESU3E5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FLSBaiduMapDemo/BaiduMapAPI",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = FLSBaiduMapDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FLSBaiduMapDemo/BaiduMapAPI/thirdlibs",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haoniu.qingcong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F875DF7D2141742F0050ADDD /* Build configuration list for PBXProject "FLSBaiduMapDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F875DF99214174300050ADDD /* Debug */,
+				F875DF9A214174300050ADDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F875DF9B214174300050ADDD /* Build configuration list for PBXNativeTarget "FLSBaiduMapDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F875DF9C214174300050ADDD /* Debug */,
+				F875DF9D214174300050ADDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F875DF8E2141742F0050ADDD /* FLSBaiduMapDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F875DF8F2141742F0050ADDD /* FLSBaiduMapDemo.xcdatamodel */,
+			);
+			currentVersion = F875DF8F2141742F0050ADDD /* FLSBaiduMapDemo.xcdatamodel */;
+			path = FLSBaiduMapDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F875DF7A2141742F0050ADDD /* Project object */;
+}
